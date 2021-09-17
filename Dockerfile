@@ -12,3 +12,6 @@ ENV PATH="/home/python/venv/bin:${PATH}" \
     PYTHONUNBUFFERED="1"
 
 WORKDIR /home/python/docker-sqlite-utils
+
+COPY --chown=python:python requirements.txt /home/python/docker-sqlite-utils/requirements.txt
+RUN /home/python/venv/bin/pip install --no-cache-dir --requirement /home/python/docker-sqlite-utils/requirements.txt
