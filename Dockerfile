@@ -1,0 +1,14 @@
+FROM python:3.9.7-alpine3.14
+
+LABEL org.opencontainers.image.source="https://github.com/williamjacksn/docker-sqlite-utils"
+
+RUN /usr/sbin/adduser -g python -D python
+
+USER python
+RUN /usr/local/bin/python -m venv /home/python/venv
+
+ENV PATH="/home/python/venv/bin:${PATH}" \
+    PYTHONDONTWRITEBYTECODE="1" \
+    PYTHONUNBUFFERED="1"
+
+WORKDIR /home/python/docker-sqlite-utils
