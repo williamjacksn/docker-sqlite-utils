@@ -18,7 +18,7 @@ six==1.16.0
     # via python-dateutil
 sqlite-fts4==1.0.1
     # via sqlite-utils
-sqlite-utils==3.19
+sqlite-utils==3.20
     # via -r requirements.in
 tabulate==0.8.9
     # via sqlite-utils
