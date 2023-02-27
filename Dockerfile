@@ -1,4 +1,4 @@
-FROM python:3.11.2-alpine3.16
+FROM python:3.11.2-alpine3.17
 
 LABEL org.opencontainers.image.source="https://github.com/williamjacksn/docker-sqlite-utils"
 
