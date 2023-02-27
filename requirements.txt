@@ -16,7 +16,7 @@ python-dateutil==2.8.2
     # via sqlite-utils
 six==1.16.0
     # via python-dateutil
-sqlite-fts4==1.0.1
+sqlite-fts4==1.0.3
     # via sqlite-utils
 sqlite-utils==3.30
     # via -r requirements.in
